@@ -1,4 +1,4 @@
-job('webapi-build') {
+job('webapi_build') {
     logRotator(-1, 10)
     scm	{
 		github('Saetabis1/ReportSystem','master')

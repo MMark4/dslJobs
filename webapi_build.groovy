@@ -10,6 +10,6 @@ job('webapi_build') {
 		batchFile('dotnet build')
     }
     publishers {
-        archiveArtifacts('job-dsl-plugin/build/libs/job-dsl.hpi')
+			mailer('marca.manu2@gmail.com', true, true)
     }
 }

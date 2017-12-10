@@ -7,8 +7,8 @@ job('webapi_build') {
         githubPush()
     }
     steps {
-        batchFile('cd reportsystemwebapi/')
-		batchFile('dotnet build')
+        bat('cd reportsystemwebapi/')
+		bat('dotnet build')
     }
     publishers {
         archiveArtifacts('job-dsl-plugin/build/libs/job-dsl.hpi')

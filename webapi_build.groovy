@@ -1,13 +1,12 @@
 job('webapi_build') {
     logRotator(-1, 10)
     scm	{
-		github('Saetabis1/ReportSystem','master')
+		github('Saetabis1/reportsystemwebapi','master')
     }
     triggers {
         githubPush()
     }
     steps {
-        bat('cd reportsystemwebapi/')
 		bat('dotnet build')
     }
     publishers {

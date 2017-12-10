@@ -7,7 +7,7 @@ job('webapi_build') {
         githubPush()
     }
     steps {
-        batchFile('cd reportsystemwebapi\')
+        batchFile('cd reportsystemwebapi/')
 		batchFile('dotnet build')
     }
     publishers {
